@@ -15,7 +15,7 @@
 
 :root {
     --prim: #00c6c6;
-    --sec: #1f4953;
+    --sec: #434b4d;
     --tert: #d6d6d6;
 
     --logo: 'Courier Prime', monospace;
@@ -128,6 +128,10 @@ body {
     font-style: italic;
 }
 
+.main {
+    padding: 20px 0;
+}
+
 .carousel-img {
     height: 75vh;
 }
@@ -149,33 +153,23 @@ body {
 }
 
 .toggles {
-    margin-top: 20px;
-    position: relative;
-    height: 25px;
-    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: end;
+    /* border: 1px solid green; */
 }
 
 .toggle-left, .toggle-right {
-    position: absolute;
-    width: 25px;
-    height: 25px;
+    border: 1px solid var(--tert);
     color: #898989;
-    background-color: var(--tert);
-
-}
-
-.toggle-right {
-    right: 0;
-}
-
-.toggle-left {
-    right: 28px;
+    background-color: #fff;
+    
 }
 
 .toggle-left:hover, .toggle-right:hover {
     color: #fff;
     background-color: var(--prim);
-}
+    border: none;
+} 
 
 .product-figure {
     position: relative;
@@ -197,4 +191,134 @@ body {
     transform: translateX(-50%);
     font-size: 14px;
     text-transform: uppercase;
+}
+
+
+.top-footer {
+    padding: 10px 0;
+    width: 100%;
+    background-color: var(--tert);
+
+}
+
+.footer-text {
+    margin: 0;
+    padding: 0;
+    color: var(--sec);
+    font-family: var(--headerFont);
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+}
+
+.email-form {
+    width: 75%;
+    font-size: 14px;
+    font-weight: 200;
+    background-color: var(--tert);
+    border: 1px solid yellow;
+
+}
+
+.submit-btn {
+    color: #fff;
+    font-family: var(--headerFont);
+    text-transform: uppercase;
+    background-color: var(--sec);
+}
+
+.mid-footer {
+    padding: 50px 0;
+    color: #fff;
+    background-color: var(--sec);
+}
+
+.footer-header {
+    font-family: var(--headerFont);
+    font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 100;
+    text-transform: uppercase;
+
+}
+
+.footer-list {
+    padding-left: 16px;
+    list-style-type: square;
+}
+
+.footer-list-item {
+    font-size: 14px; 
+    line-height: 2;
+}
+
+.footer-list-item::marker {
+    color: var(--prim);
+}
+
+.footer-list-link {
+    color: var(--tert);
+    font-size: 12px;
+    font-family: var(--headerFont);
+    text-decoration: none;
+}
+
+.footer-list-link:hover {
+    color: var(--prim);
+}
+
+.tweet {
+    color: var(--tert);
+    font-family: var(--headerFont);
+    font-size: 12px;
+}
+
+.tweet-link {
+    color: var(--prim);
+}
+
+.time-of-tweet {
+    color: #898989;
+    font-size: 10px;
+}
+
+.like-btn {
+    display: block;
+    margin-left: auto;
+    padding: 3px 8px;
+    color: #fff;
+    font-size: 10px;
+    background-color: var(--prim);
+    border:none;
+    border-radius: 3px;
+}
+
+.stats {
+    color: var(--tert);
+    font-size: 12px;
+}
+
+.fb-figcaption {
+    color: var(--tert);
+    font-size: 12px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.bottom-footer {
+    padding: 5px 0;
+    border-top: 1px solid #444;
+    background-color: var(--sec);
+}
+
+.icon-bg {
+    margin-right: 14px;
+}
+
+.footer-icons {
+    color: #fff;
+}
+
+.colophon {
+    color: #fff;
+    font-size: 10px;
+
 }
